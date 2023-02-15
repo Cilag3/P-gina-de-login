@@ -1,0 +1,19 @@
+.generico {
+  width: 100%;
+  padding: 13px 10px 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  gap: 10px;
+}
+
+.sem-fundo {
+
+  box-sizing: border-box;
+  border: 1px solid #e8e8e8;
+}
+
+.com-fundo {
+  background: #7f265b;
+}
