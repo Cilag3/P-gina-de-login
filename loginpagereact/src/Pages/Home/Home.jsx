@@ -15,7 +15,8 @@ export function Home() {
             <h1>Entre com a sua conta</h1>
             <h3>Veja o que está acontecendo com o seu negócio</h3>
 
-            <Button comFundo={false} icone={iconeGoogle} >Entre com o google</Button>
+            <Button  comFundo={false}  icone={iconeGoogle} >Entre com o google</Button>
+            <Button comFundo={true}>Login</Button>
           </div>
         </div>
       </div>
