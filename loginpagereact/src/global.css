@@ -3,3 +3,10 @@ body {
   height: 100vw;
   padding: 50px;
 }
+
+p {
+  font-size: 12px;
+  line-height: 16px;
+
+  color: #ae93ac;
+}

@@ -1,0 +1,9 @@
+.textbutton-button {
+  border: none;
+  background: none;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+
+  color: #7f265b;
+}
