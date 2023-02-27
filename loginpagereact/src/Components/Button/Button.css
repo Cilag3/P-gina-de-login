@@ -11,11 +11,12 @@
 
 .sem-fundo {
   box-sizing: border-box;
+    color: #525252;
   border: 2px solid #77646f;
 }
 
 .com-fundo {
-  background: #cb4a86;
+  background: var(--primary-main);
   border: none;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   color: #f2e5f3;

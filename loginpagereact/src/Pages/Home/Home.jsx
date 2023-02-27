@@ -62,7 +62,7 @@ export function Home() {
             >
               Entre com o google
             </Button>
-            <p style={{ margin: '8px' }} className="home-p">
+            <p style={{ margin: '8px' }} className="home-separador">
               {' '}
               ------------- ou Entre com seu e-mail -------------{' '}
             </p>

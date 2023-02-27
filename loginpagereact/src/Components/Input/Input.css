@@ -10,7 +10,7 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
-  color: #7a7272;
+  color: var(--text-main);
 }
 
 .input-input {
