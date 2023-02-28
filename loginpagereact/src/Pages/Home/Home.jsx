@@ -4,10 +4,11 @@ import './Home.css'
 import { Button } from '../../Components/Button/Button'
 import { Input } from '../../Components/Input/Input'
 import { TextButton } from '../../Components/TextButton/TextButton'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { user } from '../../constants/user'
+import Toggle from 'react-toggle'
 
-export function Home() {
+export function Home({ toggleTheme, theme}) {
   const formInitialState = {
     email: '',
     senha: '',
@@ -16,7 +17,6 @@ export function Home() {
   const [form, setForm] = useState(formInitialState)
 
   function formSubmit() {
-    
     const { email, senha } = form
     if (email === '' || form.senha === '') {
       alert('Formulário inválido')
@@ -26,12 +26,23 @@ export function Home() {
     const lastAtSign = email.lastIndexOf('@')
     const emailParts = email.split('@')
 
-    if (firstAtSign === -1 || email.length < 5 || lastAtSign !== firstAtSign || firstAtSign === 0 ||  lastAtSign === email.length -1 || email[0] === '.' || email[email.length -1] === '.' || email.indexOf('..') !== -1 ||emailParts[0][emailParts[0].length -1] === '.' || emailParts[1][0] === '.' ) {
+    if (
+      firstAtSign === -1 ||
+      email.length < 5 ||
+      lastAtSign !== firstAtSign ||
+      firstAtSign === 0 ||
+      lastAtSign === email.length - 1 ||
+      email[0] === '.' ||
+      email[email.length - 1] === '.' ||
+      email.indexOf('..') !== -1 ||
+      emailParts[0][emailParts[0].length - 1] === '.' ||
+      emailParts[1][0] === '.'
+    ) {
       alert('E-mail inválido')
       return
     }
 
-    if (senha.length < 6){
+    if (senha.length < 6) {
       alert('Senha inválida')
       return
     }
@@ -48,6 +59,14 @@ export function Home() {
         <img src={imagelogin} alt="" />
       </div>
       <div className="container-formulario">
+        <div className="home-button-tema-container">
+          
+          <Toggle
+            
+            checked={theme === 'dark'}
+            onChange={toggleTheme}
+          />
+        </div>
         <div className="formulario">
           <div className="formulario-titulo">
             <h1 className="home-titulo">Entre com a sua conta</h1>

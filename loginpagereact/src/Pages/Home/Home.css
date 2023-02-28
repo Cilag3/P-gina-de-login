@@ -26,6 +26,16 @@ img {
   align-items: center;
 }
 
+.home-input-tema-container {
+  width: 100%;
+  display: flex;
+ 
+}
+
+.input-tema {
+  justify-content: flex-end;
+}
+
 .formulario {
   max-width: 420px;
   background: var(--bg-light);
